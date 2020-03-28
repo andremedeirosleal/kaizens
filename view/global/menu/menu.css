@@ -1,0 +1,59 @@
+.logo{
+    height:38px; 
+    width:40px;
+    margin:0px
+}
+
+.icon-bar{color: black !important;}
+
+.navbar-brand{
+    font-size:30px;
+    font-family: 'Orbitron',Arial,sans-serif !important;
+    font-weight:bold;			
+    color: white !important;
+    text-shadow: 2px 1px 1px rgba(0,0,0,.1);
+    letter-spacing: 0;			
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: black;
+    background-color: transparent;		
+}	
+
+.navbar{
+    background-color: #7cb236 !important;
+    margin-bottom:20px; 		
+}	
+
+.navbar-default{
+    background-image: linear-gradient(to bottom,#fff 0,#fff 100%);
+}
+
+.navbar-toggler {
+    border: 1px solid white !important;
+    
+}
+
+.nav-link{
+    font-family:'Open Sans',Arial,sans-serif; /*'Orbitron',Arial,sans-serif !important;		*/
+    color:#f1f1f1 !important;		
+    text-decoration:none !important;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;					
+    font-size: 14px;		
+    color: #252525;			
+}
+
+.active, .nav-link:hover{		
+    border-color:white;
+    color:white !important;	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease
+}

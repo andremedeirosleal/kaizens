@@ -1,0 +1,186 @@
+body{
+    background-color:#f1f1f1;
+    font-family:'Open Sans',Arial,sans-serif;
+}
+
+.modal-header{
+    height:30px !important;
+    padding:0px !important;
+    margin:0px !important;
+    padding-left:13px !important;
+    background-color: #29549f;		
+    color:white !important;
+    border-top-left-radius:3px !important;
+    border-top-right-radius:3px !important;			
+}	
+.modal-header h5{
+    color:white;
+    font-size: 16px !important;
+    font-weight:bold !important;
+    padding-top:5px;			
+}
+.modal-header .close{
+    padding:0px !important;
+    margin:0px !important;
+    position:relative;
+    top:0px;
+    padding-right:10px !important;
+    font-size: 25px !important;
+}
+
+.btn-warning{
+    color:white !important;
+    background-color: #e67e22;
+    border:none;
+}
+
+.btn-warning:hover{
+    color:white !important;
+}
+
+.input-erro{
+    background-color: rgba(255,0,0,0.3) !important;	
+    border-color: gray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 0, 0, 0.6);
+}
+
+.main-card{
+    width:100% !important;
+    min-height: 500px;
+    margin-bottom:15px;    
+    font-size:12px;   
+}
+
+.dt-button{/*botoes das datatables*/
+    height:30px !important;		
+    margin-left:5px !important;		
+    padding: 0px !important;
+    padding-left: 10px!important;
+    padding-right: 10px !important;	
+    border-radius:3px !important;						
+}
+
+#table_dados_wrapper select{ /*select dos datatables */		
+    border-radius:3px;
+    height:30px;
+}
+
+#table_dados_wrapper input{ /*select dos datatables */
+    border-radius:3px;
+    border-width: 1px;
+    border: 1px solid gray;
+    height:30px;
+}
+
+.dataTable th{
+    color:white !important;
+    background-color: #29549f;
+}
+
+.dataTable th, .dataTable td{
+    font-size:12px !important;		
+}	
+
+.tb_modal td{
+    font-size:16px !important;
+}
+
+#btn_filtrar_datas{
+    height:30px;
+    width:100px;
+    border-radius:3px;
+    padding:0px;
+}
+
+/* DIV LOADING */
+#divLoading{
+    display : none;
+}    
+#divLoading.show{
+    display : block;
+    position : fixed;
+    z-index: 90000 !important;
+    background-image : url('/kaizens/lib/images/gifs/loading_blue.gif');
+    background-color:#fff;
+    opacity : 0.5;
+    background-repeat : no-repeat;
+    background-position : center;
+    left : 0;
+    bottom : 0;
+    right : 0;
+    top : 0;            
+}
+    
+.header_page{
+    width:100%;
+    background-color: white;
+}
+
+#msg_return{
+    display:none;
+    color:white;
+    font-size:14px;        
+    text-decoration: none;
+    height:30px;
+    background-color: red;
+    line-height: 30px;
+}
+
+@font-face {
+    font-family: 'password';
+    font-style: normal;      
+    src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/password.ttf);
+}
+#password {
+    font-family: 'password';		 
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .img_logo{
+        height:40% !important;
+        width:40% !important; 
+        margin-top:5px !important;
+        margin-bottom:5px !important;
+        margin-left:15px;			
+    }	
+
+    .card-body{
+        padding:10px !important;
+    }	
+    .container-fluid{
+        padding-right:8px !important;
+        padding-left:8px !important;
+    }	
+
+    .contact-form{
+        width: 100% !important;
+        height: 450px !important;						
+        
+    }
+}
+
+/* WEB */
+@media only screen and (min-width: 601px) {
+    .img_logo{			
+        height: 15%;
+        width: 15%;
+        margin-top:5px !important;
+        margin-bottom:5px !important;
+        margin-left:35px;
+    }
+    .dropdown-menu{
+        right: 0; 
+        left: auto;
+    }
+    .main-card{
+        border-radius:0px !important; 
+    }
+
+    .contact-form{
+        width: 400px;
+        height: 500px;        	
+    }
+}
+    

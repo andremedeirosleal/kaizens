@@ -1,0 +1,30 @@
+	
+	.table{	margin:0px; }
+	.table tr:first-child td{
+		border-top: none;		
+		}
+	
+	td{margin:2px; padding:2px}
+	
+	[type="checkbox"]:not(:checked),[type="checkbox"]:checked{
+		cursor:pointer;
+		position:relative;
+		top:2px;			
+	}
+	.panel{
+		height: 150px;
+	}
+
+	.datepicker{
+		z-index: 9999;
+	}
+	.panel-default{
+		width: 1260px;
+		box-shadow: 3px 3px 4px #999999;
+		margin-top:20px;
+		text-align:center;
+	}
+	#gerencia, #supervisao, #periodo{
+	width:135px;
+	font-size:11px;
+	}

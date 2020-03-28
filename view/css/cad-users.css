@@ -1,0 +1,62 @@
+	.style8 {font-size: 14px; font-family: Arial; color: #747678 ; }
+		
+	.form-control {
+		height: 27px;
+		font-size:12px;
+	}
+
+	.panel-default{
+		width:620px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+		margin-top:30px;
+		text-align:center;
+	}
+	.heading{
+		font-size:20px;
+		color: #747678;
+	}
+
+	#foto{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+		height:120px;
+		width: 100px;
+	}
+	#nome, #matricula, #gerencia, #area, #senha1, #senha2, #email{
+		width: 200px;
+		margin-right: 15px;
+	}
+
+	#LoadFoto{
+		visibility: hidden; 
+		width:1px;
+	}
+
+	.form-control{
+		height: 30px;
+		margin: 2px;
+	}
+	.custom-file-input1::-webkit-file-upload-button {
+		  visibility: hidden;
+	}
+	.custom-file-input1::before {
+		content: 'foto';
+		display: inline-block;
+		background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+		border: 1px solid #999;
+		border-radius: 3px;
+		padding: 5px 5px;
+		outline: none;
+		white-space: nowrap;
+		-webkit-user-select: none;
+		cursor: pointer;
+		text-shadow: 1px 1px #fff;
+		font-weight: 700;
+		font-size: 10pt;
+		width:100px;
+	}
+	.custom-file-input1:hover::before {
+		border-color: black;
+	}
+	.custom-file-input1:active::before {
+		background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+	}

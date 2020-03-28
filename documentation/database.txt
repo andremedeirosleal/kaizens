@@ -1,0 +1,3 @@
+database: db_kaizens
+user:
+password: Kaizens#x0
