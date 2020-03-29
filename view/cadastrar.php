@@ -10,7 +10,7 @@ header('Content-Type:text/html;charset=utf-8');
 <html lang="en">
 <head>   
   	<!-- HEADERS COMUNS -->
-    <?php include($_SERVER['DOCUMENT_ROOT']."/kaizens/view/global/headers_comuns.php");?>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/kaizens/view/global/headers-comuns.php");?>
    
     <!-- FUNCOES JS COMUNS -->
 	<!-- <script src="/kaizens/view/global/funcoes.js"></script>	 -->
@@ -117,8 +117,8 @@ header('Content-Type:text/html;charset=utf-8');
 					<div class="col col-photos">
 						<div class="row">
 							<div class="col col-photos">
-								<div class="row lb-collab">Colab. 1</div>
-								<div class="row">
+								<div class="row lb-collab lb-sup">Colaborador 1</div>
+								<div class="row ">
 									<select onclick="call_modal(1)" class="form-control sl-collab" id="in_collab1" name="in_collab1"></select>
 								</div>
 								<div class="row">
@@ -126,7 +126,7 @@ header('Content-Type:text/html;charset=utf-8');
 								</div>
 							</div>
 							<div class="col col-photos">
-								<div class="row lb-collab">Colab. 2</div>
+								<div class="row lb-collab">Colaborador 2</div>
 								<div class="row">
 									<select onclick="call_modal(2)" class="form-control sl-collab" id="in_collab1" name="in_collab1"></select>
 								</div>
@@ -135,7 +135,7 @@ header('Content-Type:text/html;charset=utf-8');
 								</div>
 							</div>
 							<div class="col col-photos">
-								<div class="row lb-collab">Colab. 3</div>
+								<div class="row lb-collab">Colaborador 3</div>
 								<div class="row">
 									<select onclick="call_modal(3)" class="form-control sl-collab" id="in_collab1" name="in_collab1"></select>
 								</div>
@@ -144,7 +144,7 @@ header('Content-Type:text/html;charset=utf-8');
 								</div>
 							</div>
 							<div class="col col-photos">
-								<div class="row lb-collab">Colab. 4</div>
+								<div class="row lb-collab">Colaborador 4</div>
 								<div class="row">
 									<select onclick="call_modal(4)" class="form-control sl-collab" id="in_collab1" name="in_collab1"></select>
 								</div>
@@ -153,7 +153,7 @@ header('Content-Type:text/html;charset=utf-8');
 								</div>
 							</div>
 							<div class="col col-photos">
-								<div class="row lb-collab">Colab. 5</div>
+								<div class="row lb-collab">Colaborador 5</div>
 								<div class="row">
 									<select onclick="call_modal(5)" class="form-control sl-collab" id="in_collab1" name="in_collab1"></select>
 								</div>
@@ -163,7 +163,7 @@ header('Content-Type:text/html;charset=utf-8');
 							</div>							
 						</div>
 					</div>
-					<div class="col-4 col-photos">
+					<div class="col-4 col-gain">
 						<div class="row gain-title" >Ganhos estimados</div>
 						<div class="row gain-title" >
 							<div class="form-check">
@@ -224,6 +224,7 @@ header('Content-Type:text/html;charset=utf-8');
 	}
 
 	function call_modal(index){
+		$('#table_users').DataTable().columns.adjust(); 		
 		$("#modal_users").modal('show');
 	}
 </script>
