@@ -1,0 +1,103 @@
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.row-margin-top{
+  margin-top: 5px;
+}
+
+textarea{
+  resize: none;
+}
+
+textbox{
+  cursor: pointer;
+}
+
+.card-kaizen{
+  max-width: 1000px;
+  border-radius:8px;
+  box-shadow: -3px 3px 5px rgba(0,0,0,.4);
+  padding:8px;
+  
+}
+
+.in-form{
+  height: 30px !important;
+  padding: 4px;  
+}
+
+
+#in_title{
+  text-align: center;  
+}
+
+.img-left{
+  height: 28px;
+  width: 30px;
+  margin: 5px; 
+}
+
+.img-right{  
+  width:100px;
+  margin: 0px;
+}
+
+.lb{
+  max-width: fit-content;
+}
+
+.col-100{
+  width: 100%;
+}
+
+.col-align-right, .col-align-left{  
+  line-height: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding:5px;
+}
+
+.col-align-right{
+  text-align: right;
+}
+
+.col-align-left{
+  text-align: left;  
+}
+
+.div-img-before, .div-img-after{
+  height:250px;
+  width:50%;
+  border:1px solid #e5e5e5;
+  padding:8px;
+  margin:4px;
+  border-radius:5px;
+}
+
+#img_before, #img_after{
+  width:100%;
+  height: 100%;
+}
+
+.col-textarea{
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.col-photos{
+  margin:4px;
+  padding:0px;
+}
+
+.sl-collab{
+  min-width:90px;
+  height:32px !important;
+  padding:4px;
+}
+
+.gain-title{
+  border-bottom: 1px solid #e5e5e5;
+}
