@@ -3,12 +3,17 @@ body{
     font-family:'Open Sans',Arial,sans-serif;
 }
 
+.btn{
+    max-height:35px;
+    
+}
+
 .modal-header{
     height:30px !important;
     padding:0px !important;
     margin:0px !important;
     padding-left:13px !important;
-    background-color: #29549f;		
+    background-color: #7cb236;		
     color:white !important;
     border-top-left-radius:3px !important;
     border-top-right-radius:3px !important;			
@@ -74,7 +79,7 @@ body{
 
 .dataTable th{
     color:white !important;
-    background-color: #29549f;
+    background-color: #7cb236;
 }
 
 .dataTable th, .dataTable td{
@@ -184,11 +189,45 @@ body{
     }
 }
     
-.btn-system{
+.btn-system-green{
     height: 30px;
     padding:4px;
     margin-top:10px;
     background-color: #7cb236;
     border:none;
     box-shadow: -2px 2px 2px rgba(0,0,0,.4);
+  }
+  
+  .btn-system-green:hover{
+    background-color:#94c94f
+  }
+
+  .btn-system-gray{
+    height: 30px;
+    padding:4px;
+    margin-top:10px;
+    background-color: #e5e5e5;
+    color:black;
+    border:none;
+    box-shadow: -1px 1px 2px rgba(0,0,0,.4);
+  }
+
+  .btn-system-gray:hover{
+    background-color:#f2f2f2
+  }
+
+  .btn-system-white{
+    height: 30px;
+    padding:4px;
+    margin-top:10px;
+    background-color: #fafafa;
+    color:#2F2F2F;
+    border:none;
+    border:1px solid #e5e5e5
+    /* box-shadow: -1px 1px 2px rgba(0,0,0,.4); */
+  }
+
+  .btn-system-white:hover{
+    background-color:white;
+    color: black;
   }
