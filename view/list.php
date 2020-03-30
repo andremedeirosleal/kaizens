@@ -64,7 +64,7 @@ noerrors();
 				{extend:'print', text:'<i class="fa fa-print "></i> Iprimir', titleAttr:'Imprimir registros'},
 				{extend:'excel', text:'<i class="fa fa-download"></i> Excel',title: 'Registros', titleAttr:'Download dos registros em excel'},					
 			],			
-			"language": {"processing": "<img src='/kaizens/libs/images/gifs/spinner.gif'/ >" }			
+			"language": {"processing": "<img src='/kaizens/lib/images/gifs/spinner.gif'/ >" }			
 		});		
 
 		//evento on doubleclick da table
@@ -124,7 +124,6 @@ noerrors();
 		}
 						
 		str += strdatas;	
-		alert(fileajax+"?"+str);	
 		table_dados.clear().draw();		
 		table_dados.ajax.url(fileajax+"?"+str).load();			
     }
@@ -194,7 +193,7 @@ noerrors();
 	
     window.onload=function(){
         var opcoes = '<label for="sl_opcoes" style="margin-left:30px; ">Filtros </label>';
-		opcoes += '<select id="sl_opcoes" class="" style="width:100px; margin-left:3px;" onchange="filtrar(this.value)">';
+		opcoes += '<select id="sl_opcoes" class="" style="width:100px; margin-left:3px; margin-right:7px" onchange="filtrar(this.value)">';
 		// opcoes += '<option value=1>Todos</option>';
 		opcoes += '<option value=2>Hoje</option>';
 		opcoes += '<option value=3>Ontem</option>';

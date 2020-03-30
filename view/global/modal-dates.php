@@ -59,7 +59,7 @@
 						</tr>															
 					</table>
 				</div>		
-				<center><button type="button" id="btn_filtrar_datas" style="width:150px" title="Filtrar pelas datas selecionadas" class="btn btn-primary center-block" onclick="datas()">Filtrar</button></center>																	
+				<center><button type="button" id="btn_filtrar_datas" style="width:150px" title="Filtrar pelas datas selecionadas" class="btn btn-success btn-system-green center-block" onclick="datas()">Filtrar</button></center>																	
 			</form>				
 		  </div>		  
 		</div>
