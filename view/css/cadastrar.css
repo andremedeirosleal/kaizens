@@ -203,8 +203,10 @@ label{
 
   .div-img-before, .div-img-after {
     margin: 0px !important;    
+    max-height:60%;
   }
 
+  
   .row-photos{
     padding:5px;
   }
