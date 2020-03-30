@@ -1,5 +1,5 @@
 <!-- DATATABLES HEADERS -->
-<?php include($_SERVER['DOCUMENT_ROOT']."/kaizens/view/global/datatables_headers.php");?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/kaizens/view/global/datatables-headers.php");?>
 
 <!--Modal-->	
 <div class="modal" tabindex="-1" role="dialog" id="modal_users">
@@ -36,7 +36,7 @@
 <script> 	
 	//carrega usuarios
     var table_users = $('#table_users').DataTable( {			
-		ajax: "/kaizens/json/users_json.php",
+		ajax: "/kaizens/json/users-json.php",
 		dom: 'rtip',
 		paginate: true,
 		filter: true,				

@@ -15,54 +15,54 @@ if (isset($_GET['w']) && strlen($_GET['w'])>0){
 
 //SERVIÇOS DE HOJE
 if (isset($_GET['o']) && $_GET['o']==2){	
-	$w .= " AND date(dt_abertura) = CURDATE()";
+	$w .= " AND date(dt_creation) = CURDATE()";
 }
 
 //SERVIÇOS DE ONTEM
 if (isset($_GET['o']) && $_GET['o']==3){	
-	$w .= " AND date(dt_abertura) = (CURDATE() -1)";
+	$w .= " AND date(dt_creation) = (CURDATE() -1)";
 }
 
 //MES ATUAL
 if (isset($_GET['o']) && $_GET['o']==4){	
-	$w .= " AND MONTH(dt_abertura) = MONTH(CURDATE()) and YEAR(dt_abertura) = YEAR(curdate()) ";
+	$w .= " AND MONTH(dt_creation) = MONTH(CURDATE()) and YEAR(dt_creation) = YEAR(curdate()) ";
 }
 
 //MES ANTERIOR
 if (isset($_GET['o']) && $_GET['o']==5){	
-	$w .= " AND YEAR(dt_abertura) = YEAR(CURRENT_DATE - INTERVAL 1 MONTH) AND MONTH(dt_abertura) = MONTH(CURRENT_DATE - INTERVAL 1 MONTH) ";	
+	$w .= " AND YEAR(dt_creation) = YEAR(CURRENT_DATE - INTERVAL 1 MONTH) AND MONTH(dt_creation) = MONTH(CURRENT_DATE - INTERVAL 1 MONTH) ";	
 }
 
 //TODOS OS REGISTROS DO ANO
 if (isset($_GET['o']) && $_GET['o']==7){	
-	$w .= " AND YEAR(dt_abertura) = YEAR(CURDATE())  ";
+	$w .= " AND YEAR(dt_creation) = YEAR(CURDATE())  ";
 }
 
 //TODOS OS REGISTROS DO ANO PASSADO
 if (isset($_GET['o']) && $_GET['o']==8){	
-	$w .= " AND YEAR(dt_abertura) = (YEAR(CURDATE()) -1) ";
+	$w .= " AND YEAR(dt_creation) = (YEAR(CURDATE()) -1) ";
 }
 
-//ENTRE dt_abertura
+//ENTRE dt_creation
 if (isset($_GET['di']) && strlen($_GET['di'])> 0){	
-	$w .= " AND date(dt_abertura) BETWEEN '". $_GET['di'] ."' AND '". $_GET['df'] ."'";
+	$w .= " AND date(dt_creation) BETWEEN '". $_GET['di'] ."' AND '". $_GET['df'] ."'";
 }	
 
-
-$w .= " AND bt_active = 1 ";
-
+$w .= " AND tb_registers.bt_active = 1 ";
 
 //QUERY DADOS		
 $sql = "SELECT 
 tb_registers.`*`,
-IF(tb_registers.dt_criation, DATE_FORMAT(tb_registers.dt_criation,'%d/%m/%Y'),NULL) AS dt_abertura,
+IF(tb_registers.dt_creation, DATE_FORMAT(tb_registers.dt_creation,'%d/%m/%Y'),NULL) AS dt_creation,
 tb_supervisions.ds_supervision,
 (CONCAT('/kaizens/view/global/register_photo.php?code=', tb_registers.id_register ,'&field=1'))photo_before,
 (CONCAT('/kaizens/view/global/register_photo.php?code=', tb_registers.id_register ,'&field=2'))photo_after,
-tb_managers.ds_manager
+tb_managers.ds_manager,
+tb_users.nm_user
 FROM tb_registers
 left join tb_supervisions on tb_registers.id_supervision = tb_supervisions.id_supervision
 left join tb_managers on tb_supervisions.id_manager = tb_managers.id_manager
+left join tb_users on tb_registers.id_user = tb_users.id_user
 $w ";
 
 $query = mysqli_query($con_kaizens_prd, $sql) ;
